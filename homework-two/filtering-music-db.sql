@@ -103,7 +103,7 @@ select s.name , a.name
 from song s 
 full join artist a on a.id = s.id 
 where s.explicit = true;
-
+--or
 select s.name, a.name
 from song s 
 cross join artist a 
