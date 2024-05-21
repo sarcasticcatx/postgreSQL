@@ -28,11 +28,6 @@ select * from artist_details ad
 where ad.full_name like '%e%'
 order by ad.date_of_birth asc ;
 
---not-important ali alex turner ne e roden definitivno u 2002
-update artist_details 
-set date_of_birth = '1986-01-06'
-where id = 30;
-
 --8.show all non-exolicit songs sorted by duration from shortest to longest
 select * from song s 
 where s.explicit = false 
